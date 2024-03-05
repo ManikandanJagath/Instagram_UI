@@ -25,17 +25,23 @@
       * {
         font-family: "Inter", sans-serif;
       }
+
+      #scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
     </style>
   </head>
 
   <body
     class="h-full bg-gradient-to-r from-[#fdd100] via-[#ff0000] to-[#d600c0]"
+    id=""
   >
     <h1 class="text-center text-white mt-8 font-bold text-3xl">
-      Instagram Mobile Landing Page UI Dev
+      Instagram Mobile Landing Page UI Dev(Scrollable)
     </h1>
     <div
-      class="bg-white scale-90 rounded-2xl max-w-90 mt-5 mx-auto max-h-200 overflow-y-scroll"
+      class="bg-white scale-90 rounded-2xl max-w-90 mt-5 mx-auto max-h-200 overflow-y-scroll overflow-hidden"
+      id="scrollbar-hide"
     >
       <div class="p-5">
         <div class="flex justify-between">
